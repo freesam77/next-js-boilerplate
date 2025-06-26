@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { QueryExample } from "@/components/query-example";
 
 export default function Home() {
   return (
@@ -80,6 +81,11 @@ export default function Home() {
           </Card>
         </div>
 
+        {/* TanStack Query Example */}
+        <div className="mb-12">
+          <QueryExample />
+        </div>
+
         {/* Features Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <Card>
@@ -128,7 +134,7 @@ export default function Home() {
         {/* Footer */}
         <div className="text-center text-slate-600 dark:text-slate-400">
           <p className="mb-2">
-            Built with Next.js, TypeScript, Tailwind CSS, and shadcn/ui
+            Built with Next.js, TypeScript, Tailwind CSS, shadcn/ui, and TanStack Query
           </p>
           <div className="flex justify-center gap-4 text-sm">
             <a 
@@ -148,12 +154,12 @@ export default function Home() {
               shadcn/ui Docs
             </a>
             <a 
-              href="https://tailwindcss.com" 
+              href="https://tanstack.com/query" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors"
             >
-              Tailwind CSS
+              TanStack Query
             </a>
           </div>
         </div>

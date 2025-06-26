@@ -8,6 +8,7 @@ A modern, beautiful, and accessible Next.js boilerplate with TypeScript, Tailwin
 - **TypeScript** - Full type safety and IntelliSense
 - **Tailwind CSS** - Utility-first CSS framework
 - **shadcn/ui** - Beautiful and accessible components
+- **TanStack Query** - Powerful data fetching and caching
 - **ESLint** - Code linting and formatting
 - **Dark Mode** - Built-in dark mode support
 - **Responsive Design** - Mobile-first approach
@@ -18,6 +19,7 @@ A modern, beautiful, and accessible Next.js boilerplate with TypeScript, Tailwin
 - [TypeScript](https://www.typescriptlang.org/) - Type safety
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 - [shadcn/ui](https://ui.shadcn.com/) - Component library
+- [TanStack Query](https://tanstack.com/query) - Data fetching and caching
 - [Radix UI](https://www.radix-ui.com/) - Accessible components
 
 ## 📦 Getting Started

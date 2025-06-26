@@ -38,10 +38,46 @@ npx shadcn@latest add alert alert-dialog
 npx shadcn@latest add toast progress
 ```
 
+## 🔄 TanStack Query Usage
+
+The boilerplate includes TanStack Query for data fetching. Here's a quick example:
+
+```tsx
+import { useQuery } from '@tanstack/react-query';
+
+// Define your API function
+const fetchData = async () => {
+  const response = await fetch('/api/data');
+  return response.json();
+};
+
+// Use in your component
+function MyComponent() {
+  const { data, isLoading, error } = useQuery({
+    queryKey: ['data'],
+    queryFn: fetchData,
+  });
+
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error.message}</div>;
+
+  return <div>{/* Your data */}</div>;
+}
+```
+
+### TanStack Query DevTools
+
+The dev tools are automatically included and can be accessed by:
+- Opening the browser dev tools
+- Looking for the "React Query" tab
+- This shows all queries, their status, and cache information
+
 ## 📁 Key Files
 
 - `src/app/page.tsx` - Main page (currently shows component demo)
 - `src/components/ui/` - shadcn/ui components
+- `src/components/query-example.tsx` - TanStack Query example
+- `src/lib/providers.tsx` - TanStack Query provider setup
 - `src/app/globals.css` - Global styles and CSS variables
 - `components.json` - shadcn/ui configuration
 - `tailwind.config.ts` - Tailwind CSS configuration
